@@ -24,13 +24,19 @@
         <img src="images/tokepics.webp" alt="Whatsapp Images" />
         <h1>Adetoke Faderin</h1>
       </div>
+
+      <div class="menu-icon" id="menuToggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
     </header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Home</a></li>
         <li><a href="https://">Chamber</a></li>
         <li><a href="https://">GitHub Profile</a></li>
-        <li><a href="https://linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
       </ul>
     </nav>
     <main class="grid">
@@ -39,7 +45,11 @@
         <div class="course">
           <h2>Course Work</h2>
           <div class="course-info">
-            <p>---content goes here---</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
           </div>
         </div>
         <div class="country">
@@ -52,25 +62,23 @@
       </section>
       <div class="certificate">
         <h2>Web and Computer Programming Certificate</h2>
-        <div class="certificate-buttons">
-          <button onclick="filterItems('all')">All</button>
-          <button onclick="filterItems('cse')">CSE</button>
-          <button onclick="filterItems('wdd')">WDD</button>
+        <div class="filter-buttons">
+          <button class="filter-btn active" id="all-btn">All</button>
+          <button class="filter-btn" id="wdd-btn">WDD</button>
+          <button class="filter-btn" id="cse-btn">CSE</button>
         </div>
-        <div id="items">
-          <div class="item" data-category="cse">CSE 110</div>
-          <div class="item" data-category="wdd">WDD 130</div>
-          <div class="item" data-category="cse">CSE 111</div>
-          <div class="item" data-category="wdd">WDD 131</div>
-          <div class="item" data-category="cse">CSE 210</div>
-          <div class="item" data-category="wdd">WDD 231</div>
+
+        <div class="credit-counter" id="credit-counter">Total credits: 0</div>
+
+        <div class="courses-grid" id="courses-grid">
+          <!-- Course cards will be dynamically generated here -->
         </div>
       </div>
     </main>
     <footer>
       <div class="footer-container">
         <div class="last-block">
-          <p>©<span id="currentyear"></span>💕Adetoke Faderin 💕Nigeria</p>
+          <p>&copy;<span id="currentyear"></span>💕Adetoke Faderin 💕Nigeria</p>
           <img src="images/flag.webp" alt="google images" />
         </div>
         <p id="lastmodified"></p>
@@ -78,5 +86,6 @@
     </footer>
     <script src="./scripts/navigation.js"></script>
     <script src="./scripts/dates.js"></script>
+    <script src="./scripts/course.js"></script>
   </body>
 </html>
