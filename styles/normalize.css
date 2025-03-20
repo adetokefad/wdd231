@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2c3e50;
+  --primary-color: #3d52a0;
+  --secondary-color: #7091e6;
   --accent-color: #e74c3c;
-  --light-bg: #ecf0f1;
-  --text-color: #333;
-  --completed-bg: #2ecc71;
+  --light-bg: #c5c6c7;
+  --text-color: black;
+  --completed-bg: #8697c4;
   --completed-text: #fff;
 }
 * {
@@ -13,10 +13,10 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Merriweather", roboto;
   line-height: 1.6;
-  color: var(--text-color);
-  background-color: var(--light-bg);
+  color: #2c3e50;
+  background-color: white;
   margin: 0;
   padding: 20px;
 }
@@ -164,7 +164,7 @@ footer img {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   transition: background-color 0.3s;
 }
 
@@ -183,7 +183,7 @@ footer img {
 }
 
 .course-card {
-  background-color: white;
+  background-color: off whitesmoke;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -195,7 +195,7 @@ footer img {
 }
 
 .course-header {
-  background-color: var(--primary-color);
+  background-color: #adbbda;
   color: white;
   padding: 15px;
   display: flex;
@@ -204,7 +204,7 @@ footer img {
 }
 
 .course-card.completed .course-header {
-  background-color: var(--completed-bg);
+  background-color: #8697c4;
 }
 
 .course-subject-number {
@@ -214,7 +214,7 @@ footer img {
 
 .course-credits {
   font-size: 16px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ede8f5;
   padding: 3px 10px;
   border-radius: 20px;
 }
@@ -274,13 +274,13 @@ footer img {
 }
 
 .menu-icon {
-  display: none;
+  display: flex;
   position: absolute;
-  right: 40px;
+  right: 1rem;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 1.5rem;
   z-index: 100;
-  top: 40px;
+  top: 1rem;
 }
 
 .menu-icon .bar {
