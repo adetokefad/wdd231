@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="uft-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Timbuktu Chamber of Commerce Directory Page - Find local businesses and services in our community."
+    />
+    <meta name="author" content="Adetoke" />
+
+    <meta
+      property="og:title"
+      content="Timbuktu Chamber of Commerce Directory"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://adetokefad.github.io/wdd231/chamber/directory.html/images/timbuktu.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://adetokefad.github.io/wdd231/chamber/directory.html"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Timbuktu Chamber of Commerce | Directory - Adetoke Faderin</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <div class="logo">
+          <img
+            src="./images/timbuktu.jpg"
+            alt="Timbuktu Chamber of Commerce Logo"
+          />
+          <div class="logo-text">
+            <h1>Timbuktu</h1>
+            <p>Chamber of Commerce</p>
+          </div>
+        </div>
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="directory.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+          </ul>
+          <div class="dark-mode-toggle">
+            <input type="checkbox" id="dark-mode" class="toggle" />
+            <label for="dark-mode"></label>
+          </div>
+          <div class="menu-icon" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </nav>
+      </header>
+
+      <form action="thankyou.html" method="get">
+        <label>
+          First Name:
+          <input
+            type="text"
+            name="first_name"
+            title="Enter your first name"
+            autocomplete="given-name"
+            required
+          />
+        </label>
+
+        <label>
+          Last Name:
+          <input
+            type="text"
+            name="last_name"
+            title="Enter your last name"
+            autocomplete="family-name"
+            required
+          />
+        </label>
+
+        <label>
+          Organization Title:
+          <input
+            type="text"
+            name="organization_title"
+            title="Your title in the organization"
+            autocomplete="organization-title"
+            pattern="[A-Za-z\s\-]{7,}"
+            required
+          />
+        </label>
+
+        <label>
+          Email Address:
+          <input
+            type="email"
+            name="email"
+            title="Enter your email address"
+            autocomplete="email"
+            required
+            placeholder="example@domain.com"
+          />
+        </label>
+
+        <label>
+          Mobile Phone:
+          <input
+            type="tel"
+            name="phone"
+            title="Enter your mobile number"
+            autocomplete="tel"
+            required
+          />
+        </label>
+
+        <label>
+          Business/Organization Name:
+          <input
+            type="text"
+            name="organization"
+            title="Your organization's name"
+            autocomplete="organization"
+            required
+          />
+        </label>
+
+        <label>
+          Membership Level:
+          <select name="membership" title="Choose a membership level">
+            <option value="np">NP Membership (Non-Profit, Free)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>
+          Business Description:
+          <textarea
+            name="business_description"
+            title="Describe your business"
+          ></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp" />
+
+        <input type="submit" value="Submit Application" />
+      </form>
+
+      <!-- Membership Cards -->
+      <div class="membership-container">
+        <div class="membership-card" id="np-card">
+          <h3>NP Membership</h3>
+          <a href="#" onclick="openModal('np')">Learn More</a>
+        </div>
+
+        <div class="membership-card" id="bronze-card">
+          <h3>Bronze Membership</h3>
+          <a href="#" onclick="openModal('bronze')">Learn More</a>
+        </div>
+
+        <div class="membership-card" id="silver-card">
+          <h3>Silver Membership</h3>
+          <a href="#" onclick="openModal('silver')">Learn More</a>
+        </div>
+
+        <div class="membership-card" id="gold-card">
+          <h3>Gold Membership</h3>
+          <a href="#" onclick="openModal('gold')">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Membership Modals -->
+      <div id="np-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('np')">&times;</span>
+          <h2>NP Membership</h2>
+          <p>For non-profits, free membership includes...</p>
+        </div>
+      </div>
+
+      <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('bronze')">&times;</span>
+          <h2>Bronze Membership</h2>
+          <p>Includes training and event discounts...</p>
+        </div>
+      </div>
+
+      <div id="silver-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('silver')">&times;</span>
+          <h2>Silver Membership</h2>
+          <p>Includes everything in Bronze plus...</p>
+        </div>
+      </div>
+
+      <div id="gold-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('gold')">&times;</span>
+          <h2>Gold Membership</h2>
+          <p>All benefits plus premium event access...</p>
+        </div>
+      </div>
+
+      <footer>
+        <section class="footer-content">
+          <div class="chamber-info">
+            <p>Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+          </div>
+          <div class="social-links">
+            <i class="fa-brands fa-square-youtube fa-2xl"></i>
+            <i class="fa-brands fa-square-twitter fa-2xl"></i>
+            <i class="fa-brands fa-linkedin fa-2xl"></i>
+          </div>
+          <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Adetoke</p>
+            <p>
+              &copy; <span id="currentYear"></span> Timbuktu Chamber of Commerce
+            </p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
