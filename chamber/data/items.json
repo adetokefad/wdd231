@@ -1,0 +1,57 @@
+[
+     {
+       "name": "Desert Oasis Hotel",
+       "address": "123 Sahara Avenue, Timbuktu",
+       "description": "Luxury in the Heart of the Desert",
+       "image": "images/desert-oasis.webp"
+     },
+
+     {
+       "name": "Sahara Traders",
+       "address": "45 Market Street, Timbuktu",
+       "description": "Authentic Local Crafts & Goods",
+       "image": "images/sahara-traders.webp"
+     },
+
+     {
+       "name": "Timbuktu Tech Solutions",
+       "address": "78 Innovation Way, Timbuktu",
+       "description": "Bridging Ancient Wisdom with Modern Technology",
+       "image": "images/timbuktu-tech.webp"
+     },
+
+     {
+       "name": "Desert Star Cafe",
+       "address": "12 Moonlight Plaza, Timbuktu",
+       "description": "Coffee Under the Stars",
+       "image": "images/desert-star.webp"
+     },
+
+     {
+    "name": "Sahel Tours & Travel",
+    "address": "56 Explorer Road, Timbuktu",
+    "description": "Discover the Magic of Mali",
+    "image": "images/sahel-tours.webp"
+     },
+
+     {
+       "name": "Manuscript Museum",
+       "address": "34 Heritage Avenue, Timbuktu",
+       "description": "Preserving Centuries of Knowledge",
+       "image": "images/manuscript-museum.webp"
+     },
+
+     {
+       "name": "Desert Rose Boutique",
+       "address": "89 Fashion Street, Timbuktu",
+       "description": "Traditional Textiles with Modern Style",
+       "image": "images/desert-rose.webp"
+     },
+
+     {
+       "name": "Oasis Bank",
+       "address": "100 Financial Plaza, Timbuktu",
+       "tagline": "Secure Banking in the Heart of the Sahel",
+       "image": "images/oasis-bank.webp"
+     }
+]

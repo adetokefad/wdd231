@@ -122,3 +122,10 @@ body.dark-mode .card.silver {
     border-color: #c0c0c0;
     box-shadow: 0 0 8px rgba(192, 192, 192, 0.7);
 }
+
+body.dark-mode .discover-card h2 {
+    color: black;
+}
+body.light-mode .discover-card h2 {
+    color: #222;
+}

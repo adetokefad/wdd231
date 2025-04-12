@@ -437,6 +437,31 @@ main h2 {
   margin-bottom: 0;
 }
 
+#discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.discover-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  color: black;
+}
+
+.discover-card:hover {
+  transform: scale(1.05);
+}
+
+.discover-card img {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
 footer {
   background-color: var(--accent-light-gray);
   border-top: 1px solid var(--accent-gray);

@@ -1,0 +1,19 @@
+@media (min-width: 641px) {
+    #discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .discover-card img {
+        transition: filter 0.3s ease-in-out;
+    }
+
+    .discover-card:hover img {
+        filter: brightness(80%);
+    }
+}
+
+@media (min-width: 1025px) {
+    #discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
