@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Collection Grid */
+#collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Perfume Card */
+.perfume-card {
+  background: aliceblue;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #d4af37;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.perfume-card:hover {
+  transform: translateY(-5px);
+}
+.perfume-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.perfume-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+  color: black;
+}
+.perfume-card p {
+  font-size: 1rem;
+  color: black;
+}
+.perfume-card button {
+  margin-top: 0.75rem;
+  background: #008080;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: #d4af37 0.3s ease;
+}
+.perfume-card button:hover {
+  background: #d4af37;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.8);
+  align-items: center;
+  justify-content: center;
+}
+.modal.show {
+  display: flex;
+}
+.modal-content {
+  background: #f4f4f4;
+  padding: 2rem;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+}
+.modal-content img {
+  width: 100%;
+  max-height: 250px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.modal-content h3 {
+  color: var(--brown);
+}
+.modal-content p {
+  margin: 0.5rem 0;
+}
+.close-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  color: var(--coral);
+}
+
+/* Responsive Goodness */
+@media (max-width: 600px) {
+  .perfume-card {
+    padding: 0.75rem;
+  }
+  .modal-content {
+    width: 90%;
+  }
+}

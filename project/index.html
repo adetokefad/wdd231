@@ -1,0 +1,103 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wuli's Scent - Discover your signature fragrance." />
+    <meta property="og:title" content="Wuli's Scent" />
+    <meta property="og:description" content="Explore handcrafted perfumes inspired by elegance and nature." />
+    <meta property="og:image" content="/images/preview.jpg" />
+    <meta property="og:url" content="https://wulisscent.com" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>Wuli's Scent | Home</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+          <img src="images/wuli'slogo.webp">
+          <div class="logo-text">
+               <h1>Wuli's Scent</h1>
+          </div>
+      </div>
+      <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="collection.html">Collections</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="menu-icon" id="menuToggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+          <img src="images/heroperfume.webp">
+          <div class="hero-overlay">
+               <h1>Find Your Signature Scent</h1>
+               <p>Curated fragrances that elevate your essence.</p>
+               <a href="collection.html" class="button">Explore Collection</a>
+          </div>
+      </section>
+
+      <section class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <form id="newsletter-form">
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+        <section class="footer-content">
+          <div class="wuli's-info">
+            <p>Wuli's Scent</p>
+            <p>31A, Bode Fakunle Street</p>
+            <p>Gavel Estate, Mail 999</p>
+            <p>info@wuli'sscent.com</p>
+            <p>+(234) 705-6488-551</p>
+          </div>
+          <div class="social-links">
+               <nav>
+                   <a href="https://facebook.com">
+                    <img src="images/facebook.webp" alt="Facebook">
+                   </a>
+                   <a href="https://instagram.com">
+                    <img src="images/instagram.webp" alt="Instagram">
+                   </a>
+                   <a href="https://twitter.com">
+                    <img src="images/twitter.webp" alt="Twitter">
+                   </a> 
+               </nav>
+          </div>
+          <div class="footer-info">
+          <p>&copy; <span id="currentyear"></span> Wuli's Scent</p>
+          <p>Last Modification: <span id="lastModified"></span></p>
+          <p>Wuli's Scent. All Rights Reserved.</p>
+        </div>
+        </section>
+    </footer>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Thanks for subscribing!</p>
+      </div>
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/navigation.js"></script>
+  </body>
+</html>

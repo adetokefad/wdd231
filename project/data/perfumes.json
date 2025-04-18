@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "name": "Floral Bloom",
+    "type": "Floral",
+    "price": "$65",
+    "image": "images/perfume1.webp",
+    "description": "A soft floral bouquet with hints of jasmine and peony."
+  },
+  {
+    "id": 2,
+    "name": "Amber Whisper",
+    "type": "Woody",
+    "price": "$78",
+    "image": "images/perfume2.webp",
+    "description": "Warm amber notes fused with subtle vanilla undertones."
+  },
+  {
+    "id": 3,
+    "name": "Citrus Zest",
+    "type": "Citrus",
+    "price": "$58",
+    "image": "images/perfume3.webp",
+    "description": "A vibrant splash of citrus with orange and grapefruit oils."
+  },
+  {
+    "id": 4,
+    "name": "Velvet Oud",
+    "type": "Oriental",
+    "price": "$95",
+    "image": "images/perfume4.webp",
+    "description": "Deep oud fragrance blended with rose and musk."
+  },
+  {
+    "id": 5,
+    "name": "Ocean Drift",
+    "type": "Fresh",
+    "price": "$70",
+    "image": "images/perfume5.webp",
+    "description": "Clean aquatic scent with sea salt and driftwood."
+  },
+  {
+     "id": 6,
+     "name":"Chanel No.5",
+     "type":"Floral",
+     "price": "$95",
+     "image": "images/perfume6.webp",
+     "description": "A timeless classic known for its floral scent"
+  },
+  {
+     "id": 7,
+     "name": "Dior J'adore",
+     "type": "Floral",
+     "price": "$100",
+     "image": "images/perfume7.webp",
+     "description": "A luxurious and floral fragrance."
+  },
+  {
+     "id": 8,
+     "name": "Xerjoff Erba Pura",
+     "type": "fruity and sweet",
+     "price": "$50",
+     "image": "images/perfume8.webp",
+     "description": "A fruity and sweet fragrance."
+  },
+  {
+       "id": 9,
+       "name": "Le Labo Santal 33",
+       "type": "Woody",
+       "price":"$150",
+       "image": "images/perfume9.webp",
+       "description": "A woody and musky fragrance."
+  },
+  {
+     "id": 10,
+       "name": "Maison Francis Kurkdjian Baccarat De Marly",
+       "type": "smoky",
+       "price":"$200",
+       "image": "images/perfume10.webp",
+       "description": "A sweet and smoky fragrance."
+  },
+  {
+     "id": 11,
+       "name": "Versace Bright Crystal",
+       "type": "Floral",
+       "price":"$200",
+       "image": "images/perfume11.webp",
+       "description": "A refreshing and friuty floral scent."
+  },
+  {
+     "id": 12,
+       "name": "Burberry",
+       "type": "Floral",
+       "price":"$200",
+       "image": "images/perfume12.webp",
+       "description": "A refreshing and friuty floral scent."
+  }
+  
+]
