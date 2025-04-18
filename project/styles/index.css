@@ -112,3 +112,17 @@
   top: 1rem;
   right: 1rem;
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero img {
+    height: 100%;
+  }
+}
