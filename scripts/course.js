@@ -79,9 +79,7 @@ function renderCourses(coursesToRender) {
   // Add courses to the grid
   coursesToRender.forEach((course) => {
     const courseCard = document.createElement("div");
-    courseCard.className = `course-card ${
-      course.completed ? "completed" : ""
-    } `;
+    courseCard.className = `course-card ${course.completed ? "completed" : ""}`;
     courseCard.style.position = "relative";
 
     courseCard.innerHTML =
@@ -118,7 +116,7 @@ function renderCourses(coursesToRender) {
     (total, course) => total + course.credits,
     0
   );
-  creditCounter.textContent = "Total credits: ${totalCredits}";
+  creditCounter.textContent = `Total credits: ${totalCredits}`;
 }
 
 function showAllCourses() {
