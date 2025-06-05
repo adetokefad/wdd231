@@ -1,9 +1,31 @@
+// Set current timestamp when the form loads
 document.getElementById("timestamp").value = new Date().toISOString();
 
-function openModal(level) {
-  document.getElementById(level + "-modal").style.display = "block";
-}
+// Modal functionality
+const openButtons = document.querySelectorAll(".open-modal");
+const closeButtons = document.querySelectorAll(".close-modal");
 
-function closeModal(level) {
-  document.getElementById(level + "-modal").style.display = "none";
-}
+openButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modalId = button.getAttribute("data-modal");
+    const modal = document.getElementById(modalId);
+    modal.showModal();
+  });
+});
+
+closeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modal = button.closest("dialog");
+    modal.close();
+  });
+});
+
+// Card animation on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card, index) => {
+    setTimeout(() => {
+      card.classList.add("show");
+    }, 200 * index); // Staggered animation
+  });
+});

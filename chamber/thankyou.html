@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Timbuktu Chamber of Commerce Directory Page - Find local businesses and services in our community."
-    />
+      content="Thank you for applying to join the Chamber of Commerce">
     <meta name="author" content="Adetoke" />
 
     <meta
       property="og:title"
-      content="Timbuktu Chamber of Commerce Directory"
+      content="Timbuktu Chamber of Commerce"
     />
     <meta property="og:type" content="website" />
     <meta
@@ -20,7 +19,7 @@
     />
     <meta
       property="og:url"
-      content="https://adetokefad.github.io/wdd231/chamber/directory.html"
+      content="https://adetokefad.github.io/wdd231/chamber/thankyou.html"
     />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link
@@ -30,13 +29,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Timbuktu Chamber of Commerce | Directory - Adetoke Faderin</title>
+    <title>Thank you | Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/thankyou.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
   </head>
   <body>
     <div id="content">
@@ -53,7 +53,7 @@
         </div>
         <nav>
           <ul class="nav-menu" id="navMenu">
-            <li><a href="directory.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
@@ -69,17 +69,21 @@
           </div>
         </nav>
       </header>
-      <main>
-           <h1>Thank You for Your Submission!</h1>
-           <p>Here is your submitted information:</p>
-           <ul>
-                <li><strong>First Name:</strong> <span id="first-name"></span></li>
-                <li><strong>Last Name:</strong> <span id="last-name"></span></li>
-                <li><strong>Email:</strong> <span id="email"></span></li>
-                <li><strong>Phone:</strong> <span id="phone"></span></li>
-                <li><strong>Business Name:</strong> <span id="business"></span></li>
-                <li><strong>Submitted At:</strong> <span id="timestamp"></span></li>
-               </ul>
+      <main class="thankyou-main">
+           <h1>Thank You!</h1>
+           <p>Thank you for applying for membership with our Chamber of Commerce. We have received your application and will contact you shortly.</p>
+            
+            <div class="submission-info">
+                <h2>Your Submission Information</h2>
+                <div id="form-data">
+                    <!-- Form data will be inserted here by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="index.html" class="action-button">Return to Home</a>
+                <a href="join.html" class="action-button">Submit Another Application</a>
+            </div>
           </main>
 
       <footer>
