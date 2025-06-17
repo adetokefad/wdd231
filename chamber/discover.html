@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Timbuktu Chamber of Commerce Directory Page - Find local businesses and services in our community."
-    />
+      content="Discover the attractions and places of interest in mountain town. Find local businesses, outdoor activities, and cultural landmarks.">
     <meta name="author" content="Adetoke Faderin" />
 
     <meta
@@ -26,6 +25,7 @@
     <script src="./scripts/dates.js" defer></script>
     <script src="./scripts/navigation.js" defer></script>
     <script src="./scripts/discover.js" defer></script>
+    <!-- <script src="./scripts/directory.js" defer></script> -->
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
 
@@ -40,9 +40,9 @@
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/base.css" />
     <link rel="stylesheet" href="./styles/larger.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/discover.css" />
 
-    <title>Timbuktu Chamber of Commerce | Discovery - Adetoke Faderin</title>
+    <title>Mountain Town Chamber - Discover</title>
   </head>
   <body>
     <div id="content">
@@ -59,7 +59,7 @@
         </div>
         <nav>
           <ul class="nav-menu" id="navMenu">
-            <li><a href="directory.html" class="active">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
@@ -76,8 +76,15 @@
         </nav>
       </header>
       <main>
-        <aside id="visitor-message"></aside>
-        <aside id="discover-grid"></aside>
+        <h1 class="page-title">Discover Mountain Discover</h1>
+            
+            <div class="visit-message" id="visitMessage">
+                <!-- This will be populated with JavaScript -->
+            </div>
+    
+            <div class="card-grid" id="cardGrid">
+                <!-- Cards will be populated from JSON data -->
+            </div>
       </main>
       <footer>
         <section class="footer-content">

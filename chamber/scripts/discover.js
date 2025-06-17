@@ -1,54 +1,65 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const gridContainer = document.getElementById("discover-grid");
+// Display current year
+document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+// Display last modified date
+document.getElementById('lastModified').textContent = document.lastModified;
 
-  // Fetch JSON data
-  fetch("data/items.json")
-    .then((response) => response.json())
-    .then((data) => {
-      data.forEach((item) => {
-        const card = document.createElement("div");
-        card.classList.add("discover-card");
+// Visit tracking with localStorage
+const visitMessage = document.getElementById('visitMessage');
 
-        card.innerHTML = `
-                    <h2>${item.name}</h2>
-                    <figure>
-                        <img src="${item.image}" alt="${item.name}">
-                    </figure>
-                    <address>${item.address}</address>
-                    <p>${item.description}</p>
-                    <button>Learn More</button>
-                `;
+// Get the current date in milliseconds
+const currentDate = Date.now();
 
-        gridContainer.appendChild(card);
-      });
-    })
-    .catch((error) => console.error("Error loading data:", error));
+// Get the last visit date from localStorage
+const lastVisit = localStorage.getItem('lastVisit');
 
-  // Visitor tracking
-  trackVisitor();
-});
-
-function trackVisitor() {
-  const visitorMessage = document.getElementById("visitor-message");
-  const lastVisit = localStorage.getItem("lastVisit");
-  const now = Date.now();
-
-  if (!lastVisit) {
-    visitorMessage.textContent =
-      "Welcome! Let us know if you have any questions.";
-  } else {
-    const daysSinceLastVisit = Math.floor(
-      (now - lastVisit) / (1000 * 60 * 60 * 24)
-    );
-
+if (!lastVisit) {
+    // First visit
+    visitMessage.textContent = "Welcome! Let us know if you have any questions.";
+} else {
+    // Calculate difference in days
+    const daysSinceLastVisit = Math.floor((currentDate - lastVisit) / (1000 * 60 * 60 * 24));
+    
     if (daysSinceLastVisit < 1) {
-      visitorMessage.textContent = "Back so soon! Awesome!";
+        visitMessage.textContent = "Back so soon! Awesome!";
+    } else if (daysSinceLastVisit === 1) {
+        visitMessage.textContent = "You last visited 1 day ago.";
     } else {
-      visitorMessage.textContent = `You last visited ${daysSinceLastVisit} day${
-        daysSinceLastVisit > 1 ? "s" : ""
-      } ago.`;
+        visitMessage.textContent = `You last visited ${daysSinceLastVisit} days ago.`;
     }
-  }
-
-  localStorage.setItem("lastVisit", now);
 }
+
+// Update the last visit date
+localStorage.setItem('lastVisit', currentDate);
+
+// Fetch JSON data and build cards
+async function loadItems() {
+    try {
+        const response = await fetch('./data/items.json');
+        const data = await response.json();
+        
+        const cardGrid = document.getElementById('cardGrid');
+        
+        data.items.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            
+            card.innerHTML = `
+                <h2 class="card-title">${item.name}</h2>
+                <figure>
+                    <img src="${item.image}" alt="${item.name}" width="300" height="200" loading="lazy">
+                </figure>
+                <address>${item.address}</address>
+                <p>${item.description}</p>
+                <a href="#" class="button">Learn More</a>
+            `;
+            
+            cardGrid.appendChild(card);
+        });
+    } catch (error) {
+        console.error('Error loading items:', error);
+    }
+}
+
+// Load the items when the page loads
+loadItems();

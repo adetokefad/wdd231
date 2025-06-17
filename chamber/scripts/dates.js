@@ -29,7 +29,7 @@ if (darkModeToggle) {
 
 // Mobile navigation toggle (for smaller screens)
 const createMobileMenu = () => {
-    const nav = document.querySelector('nav ul');
+    const nav = document.querySelector('nav');
     const header = document.querySelector('header');
     
     // Create hamburger button

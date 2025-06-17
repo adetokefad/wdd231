@@ -8,22 +8,24 @@ document.addEventListener('DOMContentLoaded', () => {
     const listBtn = document.getElementById('list-btn');
     
     // View toggle functionality
-    gridBtn.addEventListener('click', () => {
-        directoryContainer.className = 'grid';
-        gridBtn.classList.add('active');
-        listBtn.classList.remove('active');
-    });
-    
-    listBtn.addEventListener('click', () => {
-        directoryContainer.className = 'list';
-        listBtn.classList.add('active');
-        gridBtn.classList.remove('active');
+    document.addEventListener('DOMContentLoaded',() =>{
+        gridBtn.addEventListener('click', () => {
+            directoryContainer.className = 'grid';
+            gridBtn.classList.add('active');
+            listBtn.classList.remove('active');
+        });
+        listBtn.addEventListener('click', () => {
+            directoryContainer.className = 'list';
+            listBtn.classList.add('active');
+            gridBtn.classList.remove('active');
+        });
     });
     
     // Fetch and display member data
     const fetchMembers = async () => {
         try {
-            const response = await fetch('data/members.json');
+            const response = await fetch('../data/members.json');
+            console.log(response);
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
