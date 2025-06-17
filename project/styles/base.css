@@ -23,13 +23,13 @@ a {
 
 /* Navbar */
 header {
-  background-color: #008080;
+  background-color: #002424;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  border-bottom: 3px solid #d4af37;
+  border-bottom: 3px solid #ffc3ad;
 }
 
 nav {
@@ -89,10 +89,10 @@ nav a.active {
   color: white;
 }
 footer {
-  background-color: #008080;
+  background-color: #002424;
   color: white;
   padding: 1rem;
-  border-top: 3px solid #d4af37;
+  border-top: 3px solid #ffc3ad;
 }
 
 .footer-content {

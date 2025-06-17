@@ -1,99 +1,162 @@
 [
   {
     "id": 1,
-    "name": "Floral Bloom",
-    "type": "Floral",
-    "price": "$65",
-    "image": "images/perfume1.webp",
-    "description": "A soft floral bouquet with hints of jasmine and peony."
+    "name": "9PM",
+    "type": "warm spicy",
+    "price": "₦45,000",
+    "image": "./images/9pm.webp",
+    "description": "A bold, long-lasting fragrance with vanilla, apple, and cinnamon notes, perfect for night outings."
   },
   {
     "id": 2,
-    "name": "Amber Whisper",
-    "type": "Woody",
-    "price": "$78",
-    "image": "images/perfume2.webp",
-    "description": "Warm amber notes fused with subtle vanilla undertones."
+    "name": "Asad",
+    "type": "oriental",
+    "price": "₦50,000",
+    "image": "./images/asad.webp",
+    "description": "Rich and exotic, Assad blends amber, spices, and oud for a powerful and confident scent."
   },
   {
     "id": 3,
-    "name": "Citrus Zest",
-    "type": "Citrus",
-    "price": "$58",
-    "image": "images/perfume3.webp",
-    "description": "A vibrant splash of citrus with orange and grapefruit oils."
+    "name": "Baccarat Rouge 540",
+    "type": "floral",
+    "price": "₦150,000",
+    "image": "./images/baccarat-rouge-540.webp",
+    "description": "A luxurious blend of jasmine, saffron, amberwood, and cedar that leaves a strong signature trail."
   },
   {
     "id": 4,
-    "name": "Velvet Oud",
-    "type": "Oriental",
-    "price": "$95",
-    "image": "images/perfume4.webp",
-    "description": "Deep oud fragrance blended with rose and musk."
+    "name": "Della",
+    "type": "citrus",
+    "price": "₦20,000",
+    "image": "./images/della.webp",
+    "description": "Bright and fresh, Della combines citrus zest and light florals for an uplifting everyday fragrance."
   },
   {
     "id": 5,
-    "name": "Ocean Drift",
-    "type": "Fresh",
-    "price": "$70",
-    "image": "images/perfume5.webp",
-    "description": "Clean aquatic scent with sea salt and driftwood."
+    "name": "Genie Club Luxe",
+    "type": "floral",
+    "price": "₦20,000",
+    "image": "./images/genie-club-luxe.webp",
+    "description": "Elegant and feminine, with notes of rose, jasmine, and a touch of musk for a luxurious finish."
   },
   {
-     "id": 6,
-     "name":"Chanel No.5",
-     "type":"Floral",
-     "price": "$95",
-     "image": "images/perfume6.webp",
-     "description": "A timeless classic known for its floral scent"
+    "id": 6,
+    "name": "Hayatti Lattafa",
+    "type": "woody",
+    "price": "₦33,500",
+    "image": "./images/hayaati-lattafa.webp",
+    "description": "A rich, woody fragrance with incense, agarwood, and hints of spice — strong and memorable."
   },
   {
-     "id": 7,
-     "name": "Dior J'adore",
-     "type": "Floral",
-     "price": "$100",
-     "image": "images/perfume7.webp",
-     "description": "A luxurious and floral fragrance."
+    "id": 7,
+    "name": "Initio",
+    "type": "oriental",
+    "price": "₦95,000",
+    "image": "./images/initio.webp",
+    "description": "Sensual and intense, Initio blends musk, oud, and spicy accords for a magnetic presence."
   },
   {
-     "id": 8,
-     "name": "Xerjoff Erba Pura",
-     "type": "fruity and sweet",
-     "price": "$50",
-     "image": "images/perfume8.webp",
-     "description": "A fruity and sweet fragrance."
+    "id": 8,
+    "name": "Kayali",
+    "type": "floral",
+    "price": "₦38,000",
+    "image": "./images/kayali.webp",
+    "description": "Sweet yet fresh, with vanilla, rose, and white florals — perfect for layering or wearing solo."
   },
   {
-       "id": 9,
-       "name": "Le Labo Santal 33",
-       "type": "Woody",
-       "price":"$150",
-       "image": "images/perfume9.webp",
-       "description": "A woody and musky fragrance."
+    "id": 9,
+    "name": "Khamrah",
+    "type": "warm spicy",
+    "price": "₦20,000",
+    "image": "./images/khamrah.webp",
+    "description": "Cinnamon-forward with sweet and boozy undertones, Khamrah is perfect for cooler days."
   },
   {
-     "id": 10,
-       "name": "Maison Francis Kurkdjian Baccarat De Marly",
-       "type": "smoky",
-       "price":"$200",
-       "image": "images/perfume10.webp",
-       "description": "A sweet and smoky fragrance."
+    "id": 10,
+    "name": "Mocha Wood",
+    "type": "woody",
+    "price": "₦24,000",
+    "image": "./images/mocha-wood.webp",
+    "description": "A creamy coffee and wood blend that feels cozy, warm, and smooth — very comforting."
   },
   {
-     "id": 11,
-       "name": "Versace Bright Crystal",
-       "type": "Floral",
-       "price":"$200",
-       "image": "images/perfume11.webp",
-       "description": "A refreshing and friuty floral scent."
+    "id": 11,
+    "name": "Nocturne",
+    "type": "oriental",
+    "price": "₦90,000",
+    "image": "./images/nocturne.webp",
+    "description": "Dark and mysterious, Nocturne mixes incense, spices, and amber to create a night-inspired allure."
   },
   {
-     "id": 12,
-       "name": "Burberry",
-       "type": "Floral",
-       "price":"$200",
-       "image": "images/perfume12.webp",
-       "description": "A refreshing and friuty floral scent."
-  }
-  
+    "id": 12,
+    "name": "Now Women",
+    "type": "floral",
+    "price": "₦30,000",
+    "image": "./images/now-women.webp",
+    "description": "Youthful and vibrant, Now Women sparkles with fruity florals and a soft musky base."
+  },
+  {
+    "id": 13,
+    "name": "OUD for Glory",
+    "type": "woody",
+    "price": "₦42,000",
+    "image": "./images/oud-for-glory.webp",
+    "description": "A bold and resinous oud fragrance, strong and long-lasting with an earthy, regal vibe."
+  },
+  {
+    "id": 14,
+    "name": "Ramz Lattafa",
+    "type": "oriental",
+    "price": "₦40,500",
+    "image": "./images/ramz-lattafa.webp",
+    "description": "Smooth and sensual, Ramz blends vanilla, amber, and soft florals for a sweet oriental finish."
+  },
+  {
+    "id": 15,
+    "name": "Supremacy",
+    "type": "citrus",
+    "price": "₦50,000",
+    "image": "./images/supremacy.webp",
+    "description": "Bright citrus top notes with a strong aromatic and woody dry down — versatile and classy."
+  },
+  {
+    "id": 16,
+    "name": "Tawil",
+    "type": "woody",
+    "price": "₦35,000",
+    "image": "./images/taweel.webp",
+    "description": "A rich blend of cedar, patchouli, and light spices that’s both refined and masculine."
+  },
+  {
+    "id": 17,
+    "name": "TomFord Black Orchid",
+    "type": "oriental",
+    "price": "₦120,000",
+    "image": "./images/tomford-black-orchid.webp",
+    "description": "Decadent and dark with black truffle, ylang-ylang, and patchouli — a true statement scent."
+  },
+  {
+    "id": 18,
+    "name": "Valentino",
+    "type": "floral",
+    "price": "₦45,000",
+    "image": "./images/valentino.webp",
+    "description": "Romantic and elegant, Valentino features iris, rose, and vanilla for a luxurious feminine scent."
+  },
+  {
+    "id": 19,
+    "name": "Yara",
+    "type": "floral",
+    "price": "₦18,500",
+    "image": "./images/yara.webp",
+    "description": "Soft and powdery with tropical notes and creamy florals, Yara is sweet, cozy, and dreamy."
+  },
+  {
+  "id": 20,
+  "name": "Smart",
+  "type": "citrus",
+  "price": "₦10,000",
+  "image": "./images/smart.webp",
+  "description": "A fresh and lively citrus fragrance that’s perfect for everyday confidence and youthful energy. Smart is clean, crisp, and made for the modern vibe."
+}
 ]
