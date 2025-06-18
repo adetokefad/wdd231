@@ -4,13 +4,40 @@
   box-sizing: border-box;
 }
 
+.view-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.view-toggle button {
+  background-color: #014646;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.view-toggle button.active {
+  background-color: #002424;
+}
+
 /* Collection Grid */
-#collection-grid {
+#collection-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+#collection-container.grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+#collection-container.list {
+  grid-template-columns: 1fr;
 }
 
 /* Perfume Card */
@@ -54,6 +81,18 @@
 .perfume-card button:hover {
   background: #065151;
 }
+
+#collection-container.list .perfume-card {
+  flex-direction: row;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+#collection-container.list .perfume-card img {
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+
 
 /* Modal Styling */
 .modal {

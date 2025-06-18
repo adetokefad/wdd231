@@ -1,5 +1,5 @@
 // scripts/collection.js
-const grid = document.getElementById("collection-grid");
+const grid = document.getElementById("collection-container");
 
 // Modal setup
 let modal;
@@ -20,6 +20,38 @@ function openModal(perfume) {
 function closeModal() {
   modal.classList.remove("show");
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const gridBtn = document.getElementById("grid-btn");
+  const listBtn = document.getElementById("list-btn");
+  const collectionContainer = document.getElementById("collection-container");
+
+  gridBtn.addEventListener('click', () => {
+    collectionContainer.className = 'grid';
+    gridBtn.classList.add('active');
+    listBtn.classList.remove('active');
+  });
+
+  listBtn.addEventListener('click', () => {
+    collectionContainer.className = 'list';
+    listBtn.classList.add('active');
+    gridBtn.classList.remove('active');
+  });
+});
+
+// View toggle functionality
+    document.addEventListener('DOMContentLoaded',() =>{
+        gridBtn.addEventListener('click', () => {
+            collectionContainer.className = 'grid';
+            gridBtn.classList.add('active');
+            listBtn.classList.remove('active');
+        });
+        listBtn.addEventListener('click', () => {
+            collectionContainer.className = 'list';
+            listBtn.classList.add('active');
+            gridBtn.classList.remove('active');
+        });
+    });
 
 // Fetch perfume data
 async function loadPerfumes() {
