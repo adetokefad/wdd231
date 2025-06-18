@@ -39,20 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// View toggle functionality
-    document.addEventListener('DOMContentLoaded',() =>{
-        gridBtn.addEventListener('click', () => {
-            collectionContainer.className = 'grid';
-            gridBtn.classList.add('active');
-            listBtn.classList.remove('active');
-        });
-        listBtn.addEventListener('click', () => {
-            collectionContainer.className = 'list';
-            listBtn.classList.add('active');
-            gridBtn.classList.remove('active');
-        });
-    });
-
 // Fetch perfume data
 async function loadPerfumes() {
   try {
@@ -100,16 +86,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadPerfumes();
 });
-
-function openModal(perfume) {
-  const modal = document.querySelector("#modal");
-  modal.querySelector("h2").textContent = perfume.name;
-  modal.querySelector("p").textContent = perfume.description;
-  modal.querySelector("img").src = perfume.image;
-  modal.classList.add("show");
-}
-
-document.querySelector("#modal .close").addEventListener("click", () => {
-  document.querySelector("#modal").classList.remove("show");
-});
-
