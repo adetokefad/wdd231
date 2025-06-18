@@ -90,12 +90,12 @@
 .perfume-card h3 {
   font-size: 1.2rem;
   padding: 1rem;
-  color: #002424;
+  color: #ffffff;
 }
 
 .perfume-card p {
   padding: 0 1rem;
-  color: #ffc3ad;
+  color: #ffffff;
 }
 
 .about-snippet {
@@ -136,6 +136,7 @@
   background-color: #002424;
   padding: 2rem;
   text-align: center;
+  color: #ffffff;
 }
 
 .newsletter input {
