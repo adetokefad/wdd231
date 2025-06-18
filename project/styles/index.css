@@ -74,7 +74,7 @@
 }
 
 .perfume-card {
-  background-color: #027a7a;
+  background-color: #014646;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -95,7 +95,7 @@
 
 .perfume-card p {
   padding: 0 1rem;
-  color: #ffffff;
+  color: #fff;
 }
 
 .about-snippet {
